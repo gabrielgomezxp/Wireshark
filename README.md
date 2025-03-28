@@ -9,6 +9,7 @@ In this lab we will be exploring networking concepts using Azure.
 ![image](https://github.com/user-attachments/assets/e97b209d-63d4-48b4-bbcb-239d7273f5c8)
  - Our third step requires us to create another Virtual Machine within the same resource group & virtual network **(Which you can find in the Network settings of the Virtual Machine**) but using the Ubuntu image this time instead of Windows 10 Pro. (**Be sure to use credentials you will memorize in order to access this VM**)
 
+![image](https://github.com/user-attachments/assets/6e4fdb6c-8fe4-4cec-bcc6-6efb288faeee)
  - After both VM's have been created, remotely connect to your Windows 10 Pro VM by copying and pasting it's public IP address and inputting it into your **Remote Desktop Connection** application. (**Your username and password are the created credentials you used to create your VM**)
    <h4>Search > Remote Desktop Connection</h4>
 
@@ -17,3 +18,6 @@ In this lab we will be exploring networking concepts using Azure.
 
 ![image](https://github.com/user-attachments/assets/a2f9286d-57af-4e56-b545-972ee510d5d6)
  - When opening Wireshark, make sure to click the blue fin located in the top right corner of the application and filter for icmp traffic.
+
+![image](https://github.com/user-attachments/assets/c9b9a8e1-3b7a-42df-b4e2-2e624e0e577b)
+ - Our next step is to open up Powershell within our WiresharkVM and ping our Ubuntu VM to ensure we are getting a response and are on the same virtual network. It should look like the image above.
